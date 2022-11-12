@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 8:</title>
+</head>
+<body>
+<button onclick="play()">Chơi</button>
+</body>
+<script>
+    function play(){
+        let n = +prompt("Nhập số trong khoảng:");
+        let random = Math.floor(Math.random() * n);
+        do{
+            var guest = +prompt("Nhập số đoán");
+            if(random == guest){
+                document.write("Bạn đoán đúng số! chúc mừng bạn!");
+            }else if(guest>random){
+                alert("số bạn đoán lớn hơn");
+            }else {
+                alert("số bạn đoán bé hơn");
+            }
+        }while(guest>random || guest<random);
+
+    }
+</script>
+</html>

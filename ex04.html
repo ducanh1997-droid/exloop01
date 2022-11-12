@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 4</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = +prompt("Nhập dãy n: ");
+    let a = 8;
+    let b = 5;
+    let i=0;
+    let temp;
+    while(i<=n){
+        temp = a;
+        a = a+b;
+        b=temp;
+        i++;
+        if(b%5==0){
+            document.writeln(b);
+            break;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 5</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = 10;
+    let operand1 = 1;
+    let operand2 = 0;
+    let i = 0;
+    let temp;
+    let total = 0;
+    // for(){
+    // }
+    while(i<=n){
+        temp = operand1;
+        operand1 = operand1 + operand2;
+        operand2 = temp;
+        i++;
+        total += operand2;
+        document.write(operand2+"<br>");
+
+    }
+    document.write("Tổng là: "+total);
+</script>
+</html>
