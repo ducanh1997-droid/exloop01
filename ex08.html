@@ -14,6 +14,7 @@
     function play(){
         let n = +prompt("Nhập số trong khoảng:");
         let random = Math.floor(Math.random() * n);
+        let count = 0;
         do{
             var guest = +prompt("Nhập số đoán");
             if(random == guest){
@@ -22,6 +23,11 @@
                 alert("số bạn đoán lớn hơn");
             }else {
                 alert("số bạn đoán bé hơn");
+            }
+            count++;
+            if(count == 3){
+                document.write("Bạn đoán 3 lần! Thua cuộc");
+                break;
             }
         }while(guest>random || guest<random);
 

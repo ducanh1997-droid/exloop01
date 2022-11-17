@@ -11,15 +11,17 @@
 
 </body>
 <script>
-    let temp = +prompt("Nhập nhiệt độ C");
+    let temp;
+    do{
+        temp = +prompt("Nhập nhiệt độ C");
+        if(temp >100){
+            alert("Yêu cầu giảm nhiệt độ");
+        }else if(temp<20){
+            alert("Yêu cầu tăng nhiệt độ");
+        }else {
+            alert("Bình thường");
+        }
+    }while(temp>100 || temp<20)
 
-    while(temp>100){
-        document.write("Yêu cầu giảm nhiệt độ");
-        break;
-    }
-    while(temp<20){
-        document.write("Yêu cầu giảm nhiệt độ");
-        break;
-    }
 </script>
 </html>
